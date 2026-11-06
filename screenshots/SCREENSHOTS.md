@@ -1,1 +1,1 @@
-screenshots/01-prometheus-metrics-query-verification.png
+[screenshots/01-prometheus-metrics-query-verification.png](https://github.com/atiqa-ai/nomad-monitoring-stack/blob/0b426711c2a8e5fec791e92fdf4e4849914e7a79/screenshots/01-prometheus-metrics-query-verification.png)
