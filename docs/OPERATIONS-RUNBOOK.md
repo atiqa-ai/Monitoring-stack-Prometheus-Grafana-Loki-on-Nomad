@@ -97,9 +97,3 @@ Collect: failed command and full error, `nomad job status <job>`, current alloca
 - Add alerting, exporters, collection for real application/system logs and log retention verification.
 - Define backup/restore procedure and run recovery drills.
 - Consider multi-node scheduling and highly available storage before treating monitoring as infrastructure-critical.
-
-## References
-
-- [Nomad job status and allocation concepts](https://developer.hashicorp.com/nomad/docs/concepts/job.mdx)
-- [Grafana provisioning](https://grafana.com/docs/grafana/latest/administration/provisioning/)
-- [Loki retention](https://grafana.com/docs/loki/latest/operations/storage/retention/)
