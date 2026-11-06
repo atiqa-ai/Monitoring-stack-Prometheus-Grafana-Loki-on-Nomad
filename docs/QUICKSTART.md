@@ -73,8 +73,11 @@ nomad job run jobs/grafana.nomad.hcl
 nomad job status
 
 curl -fsS http://127.0.0.1:9090/-/ready
+
 curl -fsS http://127.0.0.1:3100/ready
+
 curl -fsS http://127.0.0.1:12345/-/ready
+
 curl -fsS http://127.0.0.1:3000/api/health
 
 ## 6. Open Grafana
