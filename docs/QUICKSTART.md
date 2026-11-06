@@ -11,7 +11,7 @@
 
 ## 1. Clone the repository
 
-git clone https://github.com/YOUR-USERNAME/nomad-monitoring-stack.git
+git clone https://github.com/atiqa-ai/nomad-monitoring-stack
 
 cd nomad-monitoring-stack
 
