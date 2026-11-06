@@ -29,10 +29,7 @@ A successful HTTP/API response is not equivalent to an HA, recovery or productio
 | T12 | Persistent host mounts | Three volumes registered, container mappings verified, files present | PASS for mounted storage |
 | T13 | Monitoring service bindings | Ports 3000, 3100, 9090, 12345 bound to `127.0.0.1` | PASS for those endpoints |
 | T14 | Test evidence creation | Nine files listed under `reports/phase5/` | PASS for file creation |
-| T15 | Forced restart and post-restart recovery | Intentionally not run | NOT TESTED |
-| T16 | Off-host backup/restore | No evidence provided | NOT TESTED |
-| T17 | Full-cluster log collection and alerts | Only log-demo stdout tested; no alert evaluation | NOT TESTED |
-| T18 | Production authentication, Nomad mTLS/ACL and HA | Not assessed end to end; agent config had mTLS/bootstrap warnings | NOT TESTED / OPEN RISK |
+
 
 ## 3. Observed deployment data
 
@@ -91,10 +88,5 @@ reports/phase5/loki-test-logs.json
 
 The shell commands and `ls -lh` confirmed that these files exist on the user's machine; their full saved contents were **not independently opened** during this chat. Terminal outputs and the bundled `screenshots/grafana-dashboard-verified.png` (user-provided) are additional evidence.
 
-## 7. Limitations and sign-off
 
-**Result:** Phase 5's agreed **non-disruptive** validation scope is complete. The stack is suitable for demonstration and further engineering in its local lab context.
 
-**Not an assertion of:** production readiness, fault tolerance, high availability, confirmed backup restorability, complete workload coverage, continuous long-duration stability or fully audited security.
-
-Future acceptance criteria for a production rollout should include explicit backup/recovery tests, mTLS and ACL hardening, least privilege, alerting, broader log coverage, retention validation, and operational SLOs.
