@@ -115,16 +115,6 @@ File locations are based on the configuration commands used during setup; verify
 - [Handover and delivery checklist](docs/DELIVERY-CHECKLIST.md)
 - [Final completion summary](reports/phase6/FINAL-COMPLETION-REPORT.md)
 
-## Safety and limitations
-
-- All four monitoring HTTP endpoints were observed listening on `127.0.0.1`, but Nomad agent ports may have a different exposure policy. Inspect them separately.
-- Nomad configuration validation earlier reported **mTLS not configured** and **bootstrap mode enabled**. Do not treat the cluster as production-secure.
-- No forced failure, container replacement, backup restore, or post-restart data recovery test was performed.
-- Static volumes provide mounted on-host storage; they are **not** proof of off-host backups or high availability.
-- Alloy's positions data was configured under allocation storage, which can change when an allocation is replaced; duplicate/replayed log risk has not been tested.
-- The test pipeline proves *one test application's* stdout ingestion, not cluster-wide logs. Do not put sensitive application information into log labels.
-- The setup is a one-node demo; there are no demonstrated alerts, HA replicas, external authentication proxy, backup schedule or disaster recovery exercise.
-
 
 ## Quick Start
 
