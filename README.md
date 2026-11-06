@@ -33,7 +33,7 @@ For implementation details, see [Architecture](docs/ARCHITECTURE.md).
 | Loki | `grafana/loki:3.7.9` | `loki` | `127.0.0.1:3100` | Ingest and query logs |
 | Grafana Alloy | `grafana/alloy:v1.21.3` | Task `alloy` in `nomad-log-demo` | `127.0.0.1:12345` | Tail and forward logs |
 | Grafana | `grafana/grafana:13.3.0` | `grafana` | `127.0.0.1:3000` | Visualize metrics and logs |
-| Log generator | `busybox:1.37.0` | Task `log-demo` in `nomad-log-demo` | N/A | Generate test messages |
+
 
 The existing `rollback-demo-fixed` Docker container is outside the monitoring project's Nomad jobs; it was observed running and was not modified or tested by this project.
 
@@ -125,15 +125,6 @@ File locations are based on the configuration commands used during setup; verify
 - The test pipeline proves *one test application's* stdout ingestion, not cluster-wide logs. Do not put sensitive application information into log labels.
 - The setup is a one-node demo; there are no demonstrated alerts, HA replicas, external authentication proxy, backup schedule or disaster recovery exercise.
 
-## Authoritative references
-
-- [Nomad job specs](https://developer.hashicorp.com/nomad/docs/job-specification)
-- [Nomad Docker driver](https://developer.hashicorp.com/nomad/docs/deploy/task-driver/docker)
-- [Nomad host volumes](https://developer.hashicorp.com/nomad/docs/architecture/storage/host-volumes)
-- [Nomad allocation filesystems](https://developer.hashicorp.com/nomad/docs/concepts/filesystem)
-- [Grafana provisioning](https://grafana.com/docs/grafana/latest/administration/provisioning/)
-- [Loki retention](https://grafana.com/docs/loki/latest/operations/storage/retention/)
-- [Prometheus query API](https://prometheus.io/docs/prometheus/latest/querying/api/)
 
 ## Quick Start
 
