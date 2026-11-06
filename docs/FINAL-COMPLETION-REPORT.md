@@ -52,6 +52,3 @@ Build a single-node, Nomad-managed monitoring lab that exposes Nomad metrics in 
 **Documentation artifacts:** Integrated into the local project; GitHub publication and fresh-machine validation are pending.
 **No claim of production readiness:** Disaster recovery, host/alloc restart persistence, high availability, complete cluster log collection, alerting, and Nomad security hardening were not tested.
 
-## Next opportunities (not required for this lab)
-
-Add real application log streams, host exporters, alerts, backup/restore tests, retention checks, HTTPS/mTLS and access control. Test failover only in an approved, reversible environment with backups.
