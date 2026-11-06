@@ -138,9 +138,3 @@ sudo du -sh /var/lib/nomad-monitoring/{prometheus,loki,grafana}
 
 **No command in this handover guide starts, stops, restarts, or modifies the existing monitoring jobs.** Any future change should first be reviewed with `nomad job plan` and backed up, then performed under an approved change window. Single-host storage and no demonstrated restore procedure make uncontrolled replacements risky.
 
-## References
-
-- [Nomad job declaration workflow](https://developer.hashicorp.com/nomad/docs/job-declare)
-- [Nomad Docker task driver](https://developer.hashicorp.com/nomad/docs/deploy/task-driver/docker)
-- [Nomad job template block](https://developer.hashicorp.com/nomad/docs/job-specification/template)
-- [Prometheus query API](https://prometheus.io/docs/prometheus/latest/querying/api/)
