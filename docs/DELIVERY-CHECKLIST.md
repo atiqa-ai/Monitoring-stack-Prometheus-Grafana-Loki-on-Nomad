@@ -69,6 +69,5 @@ nomad job status
 curl -fsS http://127.0.0.1:3000/api/health
 ```
 
-## Final sign-off statement (after local integration)
-
+## Final sign-off statement 
 > The local Nomad-based monitoring stack is deployed and was verified for functional Prometheus metrics, demo-application log ingestion via Alloy/Loki, Grafana dashboard display, persistent host-volume mappings, and non-disruptive health/resource checks. Documentation is complete for the lab scope; destructive recovery testing and production hardening remain out of scope.
