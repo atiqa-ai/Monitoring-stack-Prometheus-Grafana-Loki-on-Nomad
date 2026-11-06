@@ -1,0 +1,39 @@
+ID              = 69393a92-3897-627a-1d0f-97f892e93bcb
+Name            = mavkaaa-R14P-Series
+Node Pool       = default
+Class           = <none>
+DC              = dc1
+Drain           = false
+Eligibility     = eligible
+Status          = ready
+CSI Controllers = <none>
+CSI Drivers     = <none>
+Uptime          = 30h24m15s
+Host Volumes    = grafana-data,loki-data,prometheus-data
+Host Networks   = <none>
+CSI Volumes     = <none>
+Driver Status   = docker,exec,qemu
+
+Node Events
+Time                       Subsystem     Message
+2026-11-06T00:42:26+05:00  Driver: qemu  Healthy
+2026-11-05T22:17:55+05:00  Cluster       Node registered
+
+Allocated Resources
+CPU             Memory           Disk             Alloc Count
+1550/52680 MHz  2.8 GiB/6.7 GiB  1.2 GiB/233 GiB  4
+
+Allocation Resource Utilization
+CPU            Memory
+248/52680 MHz  905 MiB/6.7 GiB
+
+Host Resource Utilization
+CPU             Memory           Disk
+1278/52680 MHz  4.1 GiB/6.7 GiB  60 GiB/233 GiB
+
+Allocations
+ID        Node ID   Task Group  Version  Desired  Status   Created     Modified
+fb1cc14f  69393a92  grafana     0        run      running  42m22s ago  42m12s ago
+9b519743  69393a92  logging     0        run      running  1h6m ago    1h6m ago
+a3f58503  69393a92  loki        0        run      running  1h8m ago    1h8m ago
+2b5416c8  69393a92  prometheus  0        run      running  1h36m ago   1h36m ago

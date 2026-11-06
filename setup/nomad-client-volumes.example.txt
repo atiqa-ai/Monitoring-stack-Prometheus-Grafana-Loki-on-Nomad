@@ -1,0 +1,17 @@
+# Add these blocks INSIDE the existing Nomad client {} block.
+# Do not create a duplicate client block.
+
+host_volume "prometheus-data" {
+  path      = "/var/lib/nomad-monitoring/prometheus"
+  read_only = false
+}
+
+host_volume "loki-data" {
+  path      = "/var/lib/nomad-monitoring/loki"
+  read_only = false
+}
+
+host_volume "grafana-data" {
+  path      = "/var/lib/nomad-monitoring/grafana"
+  read_only = false
+}

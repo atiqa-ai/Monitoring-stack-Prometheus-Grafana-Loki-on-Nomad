@@ -1,0 +1,7 @@
+CONTAINER ID   NAME                                              CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O         PIDS
+96d509e1ae6e   grafana-fb1cc14f-2e35-214d-af86-86c41fdbfab2      2.10%     431MiB / 768MiB       56.11%    0B / 0B         1.46GB / 798MB    177
+3539f3133acf   alloy-9b519743-097f-7f6f-bafb-c4d22b2c5959        0.64%     38MiB / 256MiB        14.84%    0B / 0B         2.44MB / 1.64MB   15
+48d738ab3ce4   log-demo-9b519743-097f-7f6f-bafb-c4d22b2c5959     0.00%     844KiB / 64MiB        1.29%     9.28kB / 126B   143kB / 0B        2
+d1d13d5ec32c   loki-a3f58503-493a-e2e4-f206-21c65af65307         2.21%     74.87MiB / 1GiB       7.31%     0B / 0B         3.13MB / 1.34MB   17
+8507c751fee9   prometheus-2b5416c8-48a6-3d54-e907-c709861f5a63   0.59%     47.63MiB / 768MiB     6.20%     0B / 0B         11.9MB / 4.26MB   18
+3e0857cb5865   rollback-demo-fixed                               49.86%    39.49MiB / 6.656GiB   0.58%     38.4kB / 734B   2.79MB / 8.08MB   3

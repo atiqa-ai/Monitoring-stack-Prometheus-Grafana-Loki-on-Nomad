@@ -1,0 +1,27 @@
+logging {
+  level = "info"
+}
+
+loki.source.file "nomad_demo" {
+  targets = [
+    {
+      __path__ = "/alloc/logs/log-demo.stdout.*",
+      job      = "nomad-log-demo",
+      task     = "log-demo",
+      source   = "nomad",
+    },
+  ]
+
+  forward_to = [loki.write.local.receiver]
+
+  file_match {
+    enabled     = true
+    sync_period = "5s"
+  }
+}
+
+loki.write "local" {
+  endpoint {
+    url = "http://127.0.0.1:3100/loki/api/v1/push"
+  }
+}

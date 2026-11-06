@@ -1,0 +1,5 @@
+ID              Type     Priority  Status   Submit Date
+grafana         service  50        running  2026-11-07T03:12:19+05:00
+loki            service  50        running  2026-11-07T02:46:08+05:00
+nomad-log-demo  service  50        running  2026-11-07T02:48:08+05:00
+prometheus      service  50        running  2026-11-07T02:18:25+05:00
