@@ -75,10 +75,4 @@ The monitoring HTTP bindings were verified with `ss -lntp`. Loopback binding doe
 - **Logging gap:** Only `nomad-log-demo` stdout is proven ingested. No evidence of Prometheus, Loki, Grafana or other application logs being ingested.
 - **Recovery gap:** Failover, restart-based persistence, backup restoration, and Alloy positions recovery were intentionally not exercised.
 
-## Source references
 
-- [Nomad allocation filesystem](https://developer.hashicorp.com/nomad/docs/concepts/filesystem)
-- [Nomad host volumes](https://developer.hashicorp.com/nomad/docs/architecture/storage/host-volumes)
-- [Grafana configuration provisioning](https://grafana.com/docs/grafana/latest/administration/provisioning/)
-- [Loki retention behavior](https://grafana.com/docs/loki/latest/operations/storage/retention/)
-- [Grafana Alloy file source](https://grafana.com/docs/alloy/latest/reference/components/loki/loki.source.file/)
