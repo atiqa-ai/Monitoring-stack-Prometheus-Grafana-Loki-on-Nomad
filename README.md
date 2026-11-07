@@ -100,7 +100,7 @@ The provisioned **Nomad Monitoring - Metrics and Logs** dashboard has four panel
 
 Other evidence: [Prometheus metrics query](screenshots/01-prometheus-metrics-query-verification.png) · [Recent application logs](screenshots/05-loki-realtime-application-logs.png) · [Allocation task health](screenshots/06-nomad-allocation-task-health.png) · [Nomad client resources](screenshots/07-nomad-client-resource-monitoring.png).
 
-> Screenshots represent observed lab results; they do not establish high availability, automatic recovery, or production security. Review images and saved reports for machine identifiers or other information before publishing the repository publicly.
+
 
 ## Getting started
 
